@@ -31,7 +31,7 @@
           <a href="{{ site.github.tar_url }}" class="download-button tar"><span>Download</span></a>
           <a href="{{ site.github.zip_url }}" class="download-button zip"><span>Download</span></a>
           {% endif %}
-          <a href="https://www.facebook.com/thetechlab.2022" class="code">Xem trang chủ của CLB </a>
+          <a href="{{ site.github.repository_url }}" class="code">View {{ site.title | default: site.github.repository_name }} on GitHub</a>
         </div>
         <span class="blc"></span><span class="trc"></span>
         </div>
@@ -41,18 +41,14 @@
       </div>
     </div>
     <footer>
+      <div class="owner">
+      {% if site.github.is_project_page %}
+      <p><a href="{{ site.github.owner_url }}" class="avatar"><img src=""C:\Users\ADMIN\Downloads\328469129_1184572582230889_6981744536682823222_n.jpg"" width="48" height="48"></a> 
+
+      </div>
     </footer>
   </div>
   <div class="current-section">
-    <a href="#top">Scroll to top</a>
-    {% if site.show_downloads %}
-    <a href="{{ site.github.tar_url }}" class="tar">tar</a>
-    <a href="{{ site.github.zip_url }}" class="zip">zip</a>
-    <a href="{{ site.github.repository_url }}" class="code">source code</a>
-    {% endif %}
-    <p class="name"></p>
-  </div>
-    <div class="current-section">
     <a href="#top">Scroll to top</a>
     {% if site.show_downloads %}
     <a href="{{ site.github.tar_url }}" class="tar">tar</a>
